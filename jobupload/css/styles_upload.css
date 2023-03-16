@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: 'Poppins',sans-serif;
+}
+#keylist{
+    margin-left: auto;
+    margin-right: auto;
+}
+.form-control{
+	width: 70%;
+	height: 20px;
+	background: #e0dede;
+	justify-content: center; 
+	display: flex;
+	margin: 20px auto;
+	padding: 20px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+
+
+label{
+	color: #fff;
+	font-size: 30px;
+	justify-content: center;
+	display: flex;
+	margin: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    background-color: #160053;
+    font-size: x-large;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.container{
+    background: #160053;
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-bar{
+    background: white;
+    width: 90%;
+    max-width: 800px;
+    display: flex;
+    padding: 2px;
+    border-radius: 4px;
+
+
+}
+
+#select{
+    background: #160053;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    width: 300px;
+    padding: 25px 20px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 4px;
+}
+
+#select img{
+    width: 15px;
+}
+#select ul{
+    position: absolute;
+    top: 120%;
+    left: 0;
+    list-style: none;
+    background: white;
+    color: #555;
+    width: 100%;
+    border-radius: 4px;
+    max-height: 0;
+    overflow: hidden;
+    overflow-y: scroll;
+    transition: max-height 0.5s; 
+
+}
+
+#select ul li{
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.search-bar input{
+    padding: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+#select ul.open{
+    max-height: 300px;
+}
+div.containe a
+{
+    color: #2d3e3f;
+    text-decoration: none;
+    font: 20px 'Poppins',sans-serif;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+div.containe
+{
+    font-family: 'Poppins',sans-serif;
+    margin: 0 auto;
+
+	text-align: center;
+}
+
+
+
+
+ div.highlightTextIn a:before
+{
+    position: absolute;
+    color: #2d3e3f;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    overflow: hidden;
+    content: attr(alt);
+    transition: all 0.3s;
+    transform: scale(0.8);
+    opacity: 0;
+} 
+
+ div.highlightTextIn a:hover:before
+{
+    transform: scale(1);
+    opacity: 1;
+}
+
+div.highlightTextIn a
+{
+    color: rgba(0, 0, 0, 0.4); 
+}
+
+div.highlightTextIn a:before
+{
+    transform: scale(1.2);
+}  
+body{
+    /* color:  white;
+    background-color: #160053; */
+    font-family: 'Poppins',sans-serif;
+}
